@@ -1,3 +1,9 @@
+# revision 15878
+# category Package
+# catalog-ctan /macros/latex/contrib/proba
+# catalog-date 2009-06-02 14:48:32 +0200
+# catalog-license lppl
+# catalog-version undef
 Name:		texlive-proba
 Version:	20090602
 Release:	1
