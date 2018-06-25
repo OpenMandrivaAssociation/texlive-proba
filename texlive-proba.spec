@@ -5,7 +5,7 @@
 # catalog-license lppl
 # catalog-version undef
 Name:		texlive-proba
-Version:	20170414
+Version:	20180303
 Release:	1
 Summary:	Shortcuts commands to symbols used in probability texts
 Group:		Publishing
