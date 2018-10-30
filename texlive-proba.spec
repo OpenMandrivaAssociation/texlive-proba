@@ -6,7 +6,7 @@
 # catalog-version undef
 Name:		texlive-proba
 Version:	20180303
-Release:	2
+Release:	3
 Summary:	Shortcuts commands to symbols used in probability texts
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/proba
