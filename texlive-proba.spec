@@ -1,19 +1,13 @@
-# revision 15878
-# category Package
-# catalog-ctan /macros/latex/contrib/proba
-# catalog-date 2009-06-02 14:48:32 +0200
-# catalog-license lppl
-# catalog-version undef
 Name:		texlive-proba
-Version:	20190228
+Version:	15878
 Release:	1
 Summary:	Shortcuts commands to symbols used in probability texts
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/proba
 License:	LPPL
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/proba.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/proba.doc.tar.xz
-Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/proba.source.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/proba.r%{version}.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/proba.doc.r%{version}.tar.xz
+Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/proba.source.r%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -27,12 +21,12 @@ or filtrations (calligraphic). It requires LaTeX2e and the
 amsfonts package.
 
 %post
-    %{_sbindir}/texlive.post
+%{_sbindir}/texlive.post
 
 %postun
-    if [ $1 -eq 0 ]; then
+if [ $1 -eq 0 ]; then
 	%{_sbindir}/texlive.post
-    fi
+fi
 
 #-----------------------------------------------------------------------
 %files
@@ -45,25 +39,11 @@ amsfonts package.
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1 -a2
+%setup -c -a1 -a2
+%autopatch -p1
 
 %build
 
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc source %{buildroot}%{_texmfdistdir}
-
-
-%changelog
-* Wed Jan 04 2012 Paulo Andrade <pcpa@mandriva.com.br> 20090602-2
-+ Revision: 755067
-- Rebuild to reduce used resources
-
-* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 20090602-1
-+ Revision: 719301
-- texlive-proba
-- texlive-proba
-- texlive-proba
-- texlive-proba
-- texlive-proba
-
