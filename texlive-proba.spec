@@ -1,6 +1,6 @@
 Name:		texlive-proba
 Version:	15878
-Release:	1
+Release:	2
 Summary:	Shortcuts commands to symbols used in probability texts
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/proba
