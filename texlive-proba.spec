@@ -3,7 +3,7 @@ Version:	15878
 Release:	2
 Summary:	Shortcuts commands to symbols used in probability texts
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/proba
+URL:		https://www.ctan.org/tex-archive/macros/latex/contrib/proba
 License:	LPPL
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/proba.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/proba.doc.r%{version}.tar.xz
